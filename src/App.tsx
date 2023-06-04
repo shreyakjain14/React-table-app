@@ -58,7 +58,7 @@ function App() {
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     meta: {
-      updateData: (rowIndex, columnId, value) => {
+      updateData: (rowIndex: any, columnId:any, value:any) => {
         // Skip page index reset until after next rerender
         // skipAutoResetPageIndex();
         setData((old: any) =>
